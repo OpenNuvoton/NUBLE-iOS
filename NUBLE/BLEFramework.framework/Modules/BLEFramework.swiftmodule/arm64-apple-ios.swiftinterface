@@ -1,0 +1,113 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios14.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BLEFramework
+@_exported import BLEFramework
+import CoreBluetooth
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers public class BLEFramework : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {
+  public static var CHAR_PROPERTIE_BRODCAST: Swift.String
+  public static var CHAR_PROPERTIE_READ: Swift.String
+  public static var CHAR_PROPETIE_WRITEWITHOUTRESPONSE: Swift.String
+  public static var CHAR_PROPERTIE_WRITE: Swift.String
+  public static var CHAR_PROPERTIE_NOTIFY: Swift.String
+  public static var CHAR_PROPERTIE_INDICATE: Swift.String
+  public static var CHAR_PROPERTIE_AUTHENTICATEDSIGNEDWRITES: Swift.String
+  public static var CHAR_PROPERTIE_EXTENDEDPROPERTIES: Swift.String
+  public static var CHAR_PROPERTIE_UNKNOWN: Swift.String
+  public var FOTA_CMD_QUERY: Swift.UInt8
+  public var FOTA_CMD_START: Swift.UInt8
+  public var FOTA_CMD_ERASE: Swift.UInt8
+  public var FOTA_CMD_APPLY_UPDATE: Swift.UInt8
+  public var FOTA_CMD_START_LENGTH: Swift.Int
+  public var FOTA_NOTIFY_INTERVAL_MAX_VALUE: Swift.Int
+  public var FOTA_INDICATE_STATES: Swift.Int
+  public var THROUGHPUT_DO_AUTO_TEST_COMBINATION: Swift.Bool
+  public var THROUGHPUT_AUTO_TEST_OPTION_SEL: Swift.Int
+  public var ble_byteArray: [Swift.UInt8]
+  public var ble_notify_getData: Swift.Int
+  public var peripheralInUse: CoreBluetooth.CBPeripheral!
+  public var dataRateInUseWrite: CoreBluetooth.CBCharacteristic!
+  public var dataRateInUseNotify: CoreBluetooth.CBCharacteristic!
+  public var fotaInUseWriteNotify: CoreBluetooth.CBCharacteristic!
+  public var fotaInUseWriteIndicate: CoreBluetooth.CBCharacteristic!
+  public var getReleaseToCTMR: Swift.Bool
+  public var setCmdStatus: Swift.Int
+  public var dataRateVersion: Swift.Int
+  public var throughput_testing: Swift.Bool
+  public var throughput_sel_test_type: Swift.Int
+  public var throughput_sel_packet_length: Swift.Int
+  public var throughput_sel_data_length: Swift.Int
+  public var throughput_sel_sent_packet_interval_ms: Swift.Int
+  public var atemtuLengthUI: Swift.String
+  public var mtuLengthUI: Swift.String
+  public var packetIntervalUI: Swift.String
+  public var packetLengthUI: Swift.String
+  public var throughput_total_transferred_data_len: Swift.Int
+  public var throughput_total_receiver_data_len: Swift.Int
+  public var throughput_stop_test_flag: Swift.Int
+  public var fota_one_package_data_length: Swift.Int
+  public var log: Swift.String
+  public var binInUse: Swift.String
+  public var selectBinDone: Swift.Bool
+  public var fotaInUse: Swift.Bool
+  public var checkVersionGoNext: Swift.Bool
+  public var checkBank1GoNext: Swift.Bool
+  public var downloadFwGoNext: Swift.Bool
+  public var autoReconnectDone: Swift.Bool
+  public var phyRate: Swift.Int
+  public var connectionInterval: Swift.Int
+  public var packetLength: Swift.Int
+  public var progressIndex: Swift.Int
+  public var progress: Swift.Float
+  public var largeMTU: Swift.Bool
+  @objc override dynamic public init()
+  public func GetVersion() -> Swift.String
+  public func GetTimeMs() -> Swift.CLongLong
+  public func GetTime() -> Swift.Int
+  public func Initialize()
+  public func RegisterPeripheral(customized: Swift.Bool, to peripheral: CoreBluetooth.CBPeripheral)
+  public func RegisterBLE(_ d: BLEFramework.BLEServiceDelegate)
+  public func Scan(for names: [Swift.String])
+  public func Connect(to peripheral: CoreBluetooth.CBPeripheral)
+  public func new_SetCmd()
+  public func SetCmd()
+  public func Disconnect(to peripheral: CoreBluetooth.CBPeripheral)
+  public func SetNotify(to peripheral: CoreBluetooth.CBPeripheral, characteristic: CoreBluetooth.CBCharacteristic, enabled: Swift.Bool)
+  public func WriteData(to peripheral: CoreBluetooth.CBPeripheral, _ data: Foundation.Data, characteristic: CoreBluetooth.CBCharacteristic, writeType: CoreBluetooth.CBCharacteristicWriteType, waitRx: Swift.Bool) -> Swift.Bool
+  public func ReadData(to peripheral: CoreBluetooth.CBPeripheral, characteristic: CoreBluetooth.CBCharacteristic)
+  public func GetPeripherals() -> [CoreBluetooth.CBPeripheral]
+  public func GetPeripheralStatus() -> [Swift.Bool]
+  public func GetPeripheralConnected() -> [Swift.Bool]
+  public func GetPeripheralRSSI() -> [Swift.String]
+  public func GetPeripheralUUID() -> [Swift.String]
+  public func GetServiceDictionary() -> [CoreBluetooth.CBService : [CoreBluetooth.CBCharacteristic]]
+  public func SelectBin() -> (UIKit.UIAlertController, Swift.Int)
+  public func CheckVersion()
+  public func CheckBank1State()
+  public func DownloadFW()
+  public func ApplyReboot()
+  public func StartThroughput()
+  public func WriteData(to peripheral: CoreBluetooth.CBPeripheral, _ data: Foundation.Data, characteristic: CoreBluetooth.CBCharacteristic, writeType: CoreBluetooth.CBCharacteristicWriteType, packet_length: Swift.Int)
+  @objc public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: Swift.Error?)
+  public static func GetCharPropertiesString(characteristic: CoreBluetooth.CBCharacteristic) -> Swift.String
+  public static func GetCharProperties(characteristic: CoreBluetooth.CBCharacteristic) -> [Swift.String]
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didWriteValueFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateNotificationStateFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc public func peripheralIsReady(toSendWriteWithoutResponse peripheral: CoreBluetooth.CBPeripheral)
+  public func CancelTest()
+  @objc deinit
+}
+public protocol BLEServiceDelegate {
+  func BLECentralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  func BLECentralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  func BLECentralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+}
