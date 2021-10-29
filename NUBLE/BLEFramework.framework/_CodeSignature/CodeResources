@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q07jf+lXuu6CKZZWbGLtyJzKR1Q=
+		dLWijTkNSLmbcDKFQvaFS0gVFbw=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		UI0BNm6uAn85cOIt7iafx01mZws=
+		eom0gZ9Dy3aRYMEh/S9FPYg52DE=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		UI0BNm6uAn85cOIt7iafx01mZws=
+		eom0gZ9Dy3aRYMEh/S9FPYg52DE=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hbT7C1dAzlo7kdFnWs5RKfEZUrw=
+		nysTbnm5Lkmyvh+3fDnXJhRXovw=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Pm9hAPWEBsT5K1NNg7BHDVQlcCE=
+		cw0kQ5GcVQj7/GledOs1ctiQobs=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kS2tBK19OJVOWD+ukMCjPtTTM/U=
+		ZoEeFbBT2rv2WWHuAFK0ZwdWRV0=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		hbT7C1dAzlo7kdFnWs5RKfEZUrw=
+		nysTbnm5Lkmyvh+3fDnXJhRXovw=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Pm9hAPWEBsT5K1NNg7BHDVQlcCE=
+		cw0kQ5GcVQj7/GledOs1ctiQobs=
 		</data>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kS2tBK19OJVOWD+ukMCjPtTTM/U=
+		ZoEeFbBT2rv2WWHuAFK0ZwdWRV0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,56 +73,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UMUQa8LPUjeTdxtt74f9RVoDmRIGZA+lm3imyxJ/4XA=
+			SaLqWLK00uw4lJHUBvshU7d6c52ZaAZytkJhIanimIw=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UMUQa8LPUjeTdxtt74f9RVoDmRIGZA+lm3imyxJ/4XA=
+			SaLqWLK00uw4lJHUBvshU7d6c52ZaAZytkJhIanimIw=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H4I9qosJZ45PoaVzAg4FQwox21uM4+pWdpoU/bYjDjY=
+			u9zZVzAf+AWMqmLCbVMy/+uSggzU6BFpXFAZ9NXUhs0=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			20SV+iEUYp1TkcxvW2ntkqpbrR+GDAZpMtmVU/qwTY0=
+			yey/xXHEwr6Ih2aJmPQLQ6SNTKr2/K61W15k0LVJ7iA=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mH62+DVuuLXl4iev2a4sgPaY7yYIxAnLLlsYahMLEYA=
+			tYunGnbu8cbnKTRSXYaakDmPbGcqggaWzK2WpUd7ciM=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H4I9qosJZ45PoaVzAg4FQwox21uM4+pWdpoU/bYjDjY=
+			u9zZVzAf+AWMqmLCbVMy/+uSggzU6BFpXFAZ9NXUhs0=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			20SV+iEUYp1TkcxvW2ntkqpbrR+GDAZpMtmVU/qwTY0=
+			yey/xXHEwr6Ih2aJmPQLQ6SNTKr2/K61W15k0LVJ7iA=
 			</data>
 		</dict>
 		<key>Modules/BLEFramework.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mH62+DVuuLXl4iev2a4sgPaY7yYIxAnLLlsYahMLEYA=
+			tYunGnbu8cbnKTRSXYaakDmPbGcqggaWzK2WpUd7ciM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
